@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1034146906317",
+    "firebase_url": "https://lojaflutter-44d62.firebaseio.com",
+    "project_id": "lojaflutter-44d62",
+    "storage_bucket": "lojaflutter-44d62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034146906317:android:d27c8ec17964f803b9a984",
+        "android_client_info": {
+          "package_name": "br.com.andedy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034146906317-vo0gv09irh7hi64q2f9mg8r5atn13ruq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtt2Z0Z7lhQ0b506rKS4_h346YkHFsU4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034146906317-vo0gv09irh7hi64q2f9mg8r5atn13ruq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034146906317:android:b6b8f89f1d4dbcfab9a984",
+        "android_client_info": {
+          "package_name": "br.com.andedy.loja_online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034146906317-vo0gv09irh7hi64q2f9mg8r5atn13ruq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtt2Z0Z7lhQ0b506rKS4_h346YkHFsU4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034146906317-vo0gv09irh7hi64q2f9mg8r5atn13ruq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
