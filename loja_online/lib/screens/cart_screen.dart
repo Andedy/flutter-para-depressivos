@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:loja_online/models/cart_model.dart';
 import 'package:loja_online/models/user_model.dart';
+import 'package:loja_online/screens/order_screen.dart';
 import 'package:loja_online/tiles/cart_tile.dart';
+import 'package:loja_online/widgets/cart_price.dart';
 import 'package:loja_online/widgets/discount_card.dart';
+import 'package:loja_online/widgets/ship_card.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import 'login_screen.dart';
@@ -29,6 +32,8 @@ class CartScreen extends StatelessWidget {
           ),
         ],
       ),
+
+
       body: ScopedModelDescendant<CartModel>(
         builder: (context, child, model) {
           if (model.isLoading && UserModel.of(context).isLoggedIn()) {
@@ -94,6 +99,14 @@ class CartScreen extends StatelessWidget {
                   ).toList(),
                 ),
                 DiscountCard(),
+                ShipCard(),
+                CartPrice(() async{
+                  String orderId = await model.finishOder();
+                  if(orderId != null) 
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => OrderScreen(orderId))
+                    );
+                }),
               ],
             );
           }

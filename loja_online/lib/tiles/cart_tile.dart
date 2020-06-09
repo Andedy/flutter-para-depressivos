@@ -12,6 +12,9 @@ class CartTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget _buildContent() {
+
+      CartModel.of(context).updatePrices(); //notica meus listeners e fixa o valor (sem bug de ter que abrir e fechar e abrir dnv)
+
       return Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[

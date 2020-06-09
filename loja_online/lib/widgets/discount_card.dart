@@ -35,7 +35,7 @@ class DiscountCard extends StatelessWidget {
                     .get()
                     .then((docSnap) {
                   if (docSnap.data != null) {
-                    CartModel.of(context).setCoupon(text, docSnap.data["percentage"]);
+                    CartModel.of(context).setCoupon(text, docSnap.data["percent"]);
                     Scaffold.of(context).showSnackBar(SnackBar(
                       content: Text(
                           "Desconto de ${docSnap.data["percent"]}% aplicado!"),

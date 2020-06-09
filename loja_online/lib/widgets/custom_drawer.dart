@@ -8,6 +8,7 @@ import 'package:scoped_model/scoped_model.dart';
 
 class CustomDrawer extends StatelessWidget {
   final PageController pageController;
+  
 
   CustomDrawer(this.pageController);
 
@@ -36,10 +37,10 @@ class CustomDrawer extends StatelessWidget {
                 child: Stack(
                   children: <Widget>[
                     Positioned(
-                      top: 8.0,
+                      top: 34.0,
                       left: 0.0,
                       child: Text(
-                        "Doguinhos \nthe App",
+                        "Lojinha \nem Flutter",
                         style: TextStyle(
                           fontSize: 34.0,
                           fontWeight: FontWeight.bold,
